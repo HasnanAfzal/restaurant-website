@@ -1,0 +1,45 @@
+$color-dark: #262626;
+$color-black: #000000;
+$color-white: #ffffff;
+
+$color-primary: #d3ab55;
+$color-secondary: #bbb;
+
+
+$font-dancingScript: 'Dancing Script', cursive;
+$font-josefinSans: 'Josefin Sans', sans-serif;
+$font-nunito: 'Nunito', sans-serif;
+
+@mixin flexLayout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin textStyles($transformValue: uppercase) {
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: $transformValue;
+}
+
+@mixin headingStyles($fontFamilyValue, $fontSizeValue, $colorValue, $marginBottomValue) {
+    font-family: $fontFamilyValue;
+    font-size: $fontSizeValue;
+    font-weight: 300;
+    color: $colorValue;
+    margin-bottom: $marginBottomValue;
+}
+
+%fullSpace {
+  width: 100%;
+  height: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: $color-dark;
+}
